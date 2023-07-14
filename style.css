@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+body {
+  font-family: 'Questrial', sans-serif;
+}
+
+.container{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    text-align: end;
+    padding-top: 10px;
+  }
+
+  .logo{
+    width: 4rem;
+    background-color: white;
+  }
+
+
+  /*---------home-------------------*/
+
+
+
+#home{
+  background-image: url("img/home.jpg");
+
+  height: 200vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.container-home{
+  padding-top: 100px;
+}
+
+.home-h1{
+  color: rgb(218, 218, 245);
+  font-size: 10rem;
+  line-height: 1.1;
+}
+
+.home-h3{
+  padding-top: 18em;
+  padding-bottom: 3em;
+}
+
+#choice{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/*---------------genre----------------*/
+
+#genre{
+
+  color: white;
+  background-color: rgb(10, 10, 10);
+  padding-top: 120px;
+  padding-bottom: 120px;
+   
+}
+
+.flex-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+}
+
+.text-div{
+  width: 45%;
+  padding: 20px;
+  line-height: 1.9rem;
+}
+
+.img-div{
+  display: grid;
+  grid-template-columns: 16fr;
+  grid-template-rows: 9fr;
+  width: 45%;
+  padding: 10px;
+}
+
+.img-div:hover .genre-img{
+  opacity: 0;
+  transition: 1s ease;
+}
+.genre-img{
+  width: 100%;
+  grid-area: 1/1/2/2;
+}
+
+.video{
+  width: 100%;
+  grid-area: 1/1/2/2;
+  height: 100%;
+
+}
+
+/*footer*/
+
+footer{
+  background-color: black;
+  color: rgb(194, 171, 201);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+
+
+
+
+@media screen and (max-width: 993px) {
+  .home-h1{
+    font-size: 8rem;
+  }
+
+  .flex-1{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  
+  }
+
+  .img-div{
+    width : 100%;
+    display: grid;
+    order: 2;
+  }
+
+  .text-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .home-h1{
+    font-size: 5.6rem;
+  }
+
+  #home{
+    height: 170vh;
+    
+  }
+}
+
